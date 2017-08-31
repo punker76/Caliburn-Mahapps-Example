@@ -1,0 +1,19 @@
+<Controls:MetroWindow x:Class="CaliburnMefBoostrapperPoc.Views.ShellView"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      Width="800"
+                      Height="600"
+                      GlowBrush="{DynamicResource AccentColorBrush}">
+
+    <StackPanel>
+        <DataGrid x:Name="Items" CanUserAddRows="True" CanUserDeleteRows="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Cell1" Binding="{Binding Cell1, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cell2" Binding="{Binding Cell2, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Controls:MetroWindow>
